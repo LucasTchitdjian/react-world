@@ -5,11 +5,11 @@ const Navigation = () => {
   return (
     <div className='navigation'>
       <NavLink to={"/"}
-      exact={true}>
+      exact="true">
         Accueil
       </NavLink>
       <NavLink to={"/about"}
-      exact={true}>
+      exact="true">
         About
       </NavLink>
     </div>
