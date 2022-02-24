@@ -26,7 +26,9 @@ const News = () => {
         <input type="submit" value="Envoyer" />
       </form>
       <ul>
-        {newsData.map((article) => (
+        {newsData
+          .sort((a, b) => b.date - a.date)
+          .map((article) => (
           <Article key={article.id} article={article} />    
         ))}
       </ul>
